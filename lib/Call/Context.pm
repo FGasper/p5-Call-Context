@@ -74,11 +74,9 @@ https://github.com/FGasper/p5-Call-Context
 use strict;
 use warnings;
 
-our $VERSION = '0.03-TRIAL1';
+our $VERSION = '0.03-TRIAL2';
 
 my $_OVERLOADED_X;
-
-our $_ACCEPT_VOID;
 
 sub must_be_list {
     return _must_be_list(0);
@@ -90,7 +88,7 @@ sub must_not_be_scalar {
 }
 
 sub _must_be_list {
-    return if (caller(1 + $_[0]))[5];    #wantarray
+    return if (caller 2)[5];    #wantarray
 
     $_OVERLOADED_X ||= eval q{
         package Call::Context::X;

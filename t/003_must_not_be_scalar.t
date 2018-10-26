@@ -12,6 +12,7 @@ use Call::Context;
 
 sub foo {
     Call::Context::must_not_be_scalar();
+    1;
 }
 
 sub try {
