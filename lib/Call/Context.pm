@@ -74,7 +74,7 @@ https://github.com/FGasper/p5-Call-Context
 use strict;
 use warnings;
 
-our $VERSION = '0.03-TRIAL2';
+our $VERSION = '0.03';
 
 my $_OVERLOADED_X;
 
